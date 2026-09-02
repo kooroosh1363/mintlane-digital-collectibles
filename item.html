@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Explore a limited-edition digital work on Mintlane.">
+    <meta name="theme-color" content="#0b0911">
+    <title>Artwork — Mintlane</title>
+    <link rel="icon" href="assets/images/mark.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script type="module" src="assets/js/item.js"></script>
+  </head>
+  <body data-page="item">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html" aria-label="Mintlane home"><span class="brand-mark" aria-hidden="true"><span></span></span><span>Mintlane</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle><span class="sr-only">Open navigation</span><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary" data-nav><a href="index.html">Home</a><a href="catalog.html">Discover</a><a href="contact.html">Support</a><a class="saved-link" href="account.html">Saved <span class="count-badge" data-saved-count>0</span></a></nav>
+    </header>
+
+    <main id="main-content">
+      <div class="breadcrumb section-shell"><a href="catalog.html">Edition 01</a><span aria-hidden="true">/</span><span data-breadcrumb>Artwork</span></div>
+      <article class="item-layout section-shell" data-item-view aria-live="polite"><noscript><h1>JavaScript is required to view this artwork.</h1></noscript></article>
+      <section class="item-story section-shell" data-item-story></section>
+      <section class="related section-shell" aria-labelledby="related-title"><div class="section-heading"><div><p class="eyebrow">Continue looking</p><h2 id="related-title">From this edition</h2></div></div><div class="art-grid" data-related-grid></div></section>
+      <section class="empty-state section-shell" data-item-error hidden><span aria-hidden="true">?</span><h1>That work is not in this edition</h1><p>The link may be incomplete, or the work may have moved.</p><a class="button button-primary" href="catalog.html">Browse the collection</a></section>
+    </main>
+
+    <dialog class="request-dialog" data-request-dialog aria-labelledby="request-title"><button class="dialog-close" type="button" aria-label="Close request form" data-dialog-close>×</button><p class="eyebrow">Availability request</p><h2 id="request-title">Ask about this edition</h2><p data-dialog-work></p><form data-request-form novalidate><label for="request-name">Name<input id="request-name" name="name" autocomplete="name" required></label><label for="request-email">Email<input id="request-email" name="email" type="email" autocomplete="email" required></label><label for="request-note">Note <span>Optional</span><textarea id="request-note" name="note" rows="3" maxlength="300"></textarea></label><button class="button button-primary" type="submit">Send request</button><p class="form-status" data-request-status aria-live="polite"></p></form></dialog>
+    <footer class="site-footer section-shell"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><span></span></span><span>Mintlane</span></a><p>Independent digital editions, presented with context.</p><nav aria-label="Footer"><a href="catalog.html">Discover</a><a href="contact.html">Support</a><a href="account.html">Saved works</a></nav><small>© <span data-year></span> Mintlane. Demonstration marketplace.</small></footer>
+    <div class="toast" role="status" aria-live="polite" aria-atomic="true" data-toast></div>
+  </body>
+</html>

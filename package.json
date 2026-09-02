@@ -1,0 +1,14 @@
+{
+  "name": "mintlane-digital-collectibles",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A polished, accessible digital collectibles marketplace built with HTML, CSS, and JavaScript.",
+  "scripts": {
+    "test": "node --test",
+    "check:js": "node --check assets/js/*.js scripts/*.mjs tests/*.js",
+    "check:html": "node scripts/check-html.mjs",
+    "check": "npm run check:js && npm run check:html && npm test"
+  },
+  "engines": { "node": ">=20" }
+}

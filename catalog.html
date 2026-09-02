@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Browse and filter Mintlane's current digital edition.">
+    <meta name="theme-color" content="#0b0911">
+    <title>Discover — Mintlane</title>
+    <link rel="icon" href="assets/images/mark.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script type="module" src="assets/js/catalog.js"></script>
+  </head>
+  <body data-page="catalog">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html" aria-label="Mintlane home"><span class="brand-mark" aria-hidden="true"><span></span></span><span>Mintlane</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle><span class="sr-only">Open navigation</span><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary" data-nav><a href="index.html">Home</a><a href="catalog.html" aria-current="page">Discover</a><a href="contact.html">Support</a><a class="saved-link" href="account.html">Saved <span class="count-badge" data-saved-count>0</span></a></nav>
+    </header>
+
+    <main id="main-content" class="catalog-page section-shell">
+      <header class="page-intro reveal"><p class="eyebrow">Edition 01 · Open now</p><h1>Discover the collection.</h1><p>Search by title or artist, then narrow the edition by form.</p></header>
+      <section class="catalog-controls" aria-label="Catalog controls">
+        <label class="search-field" for="catalog-search"><span class="sr-only">Search works</span><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"></circle><path d="m16 16 5 5"></path></svg><input id="catalog-search" type="search" placeholder="Search title or artist" autocomplete="off" data-search></label>
+        <fieldset class="filter-group"><legend class="sr-only">Filter by form</legend><button type="button" class="filter-chip is-active" data-filter="all" aria-pressed="true">All works</button><button type="button" class="filter-chip" data-filter="spatial" aria-pressed="false">Spatial</button><button type="button" class="filter-chip" data-filter="organic" aria-pressed="false">Organic</button><button type="button" class="filter-chip" data-filter="kinetic" aria-pressed="false">Kinetic</button></fieldset>
+        <label class="sort-field" for="catalog-sort">Sort <select id="catalog-sort" data-sort><option value="featured">Featured</option><option value="price-asc">Price: low to high</option><option value="price-desc">Price: high to low</option><option value="title">Title: A–Z</option></select></label>
+      </section>
+      <div class="results-meta"><p data-results-count aria-live="polite">3 works</p><button type="button" class="clear-button" data-clear hidden>Clear filters</button></div>
+      <section class="art-grid catalog-grid" aria-label="Digital works" data-catalog-grid></section>
+      <section class="empty-state" data-empty-state hidden><span aria-hidden="true">∅</span><h2>No works found</h2><p>Try a different title, artist, or category.</p><button class="button button-secondary" type="button" data-empty-clear>Reset catalog</button></section>
+    </main>
+
+    <footer class="site-footer section-shell"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><span></span></span><span>Mintlane</span></a><p>Independent digital editions, presented with context.</p><nav aria-label="Footer"><a href="catalog.html">Discover</a><a href="contact.html">Support</a><a href="account.html">Saved works</a></nav><small>© <span data-year></span> Mintlane. Demonstration marketplace.</small></footer>
+    <div class="toast" role="status" aria-live="polite" aria-atomic="true" data-toast></div>
+  </body>
+</html>

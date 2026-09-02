@@ -1,396 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Discover limited-edition digital artworks curated for quiet attention.">
+    <meta name="theme-color" content="#0b0911">
+    <title>Mintlane — Curated digital editions</title>
+    <link rel="icon" href="assets/images/mark.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script type="module" src="assets/js/home.js"></script>
+  </head>
+  <body data-page="home">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html" aria-label="Mintlane home"><span class="brand-mark" aria-hidden="true"><span></span></span><span>Mintlane</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle><span class="sr-only">Open navigation</span><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary" data-nav>
+        <a href="index.html" aria-current="page">Home</a><a href="catalog.html">Discover</a><a href="contact.html">Support</a><a class="saved-link" href="account.html">Saved <span class="count-badge" data-saved-count>0</span></a>
+      </nav>
+    </header>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./assets/style/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <title>RAAD-SHOP</title>
-</head>
-
-<body>
-    <div class="main">
-        <!-- header -->
-        <div class="header">
-            <div class="container ">
-                <nav class="header-main ">
-                    <div class="header-left">
-                        <img src="./assets/img/purches.png" alt="logo-shop">
-                    </div>
-
-                    <!-- hamburger-menu -->
-                    <button class="ham-menu">
-                        <img src="./assets/img/icons/icons8-menu-50.png" alt="ham-menu">
-                    </button>
-
-                    <div class="header-right">
-                        <div>
-                            <ul class="nav">
-                                <li><a href="#">HOME</a></li>
-                                <li><a href="#">CONTACT</a></li>
-                                <li class="drop-down"><span>SHOP</span>
-                                    <i class="bi bi-menu-down"></i>
-
-                                    <ul class="shop-down">
-                                        <li><a href="#">Lorem, ipsum.</a></li>
-                                        <li><a href="#">Lorem, ipsum.</a></li>
-                                        <li><a href="#">Lorem, ipsum.</a></li>
-                                        <li><a href="#">Lorem, ipsum.</a></li>
-                                        <li><a href="#">Lorem, ipsum.</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="#">BLOG</a></li>
-                            </ul>
-                        </div>
-                        <button class="btn">Register</button>
-                    </div>
-
-
-
-                </nav>
-
-            </div>
-
-
+    <main id="main-content">
+      <section class="hero section-shell" aria-labelledby="hero-title">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">Curated edition 01</p>
+          <h1 id="hero-title">Digital objects for <em>quiet attention.</em></h1>
+          <p class="hero-summary">Three limited works. Distinct materials, deliberate motion, and enough space to look twice.</p>
+          <div class="button-row"><a class="button button-primary" href="catalog.html">Explore the edition <span aria-hidden="true">↗</span></a><a class="text-link" href="#curatorial-note">Read the curatorial note</a></div>
+          <dl class="edition-stats" aria-label="Edition facts"><div><dt>03</dt><dd>Original works</dd></div><div><dt>54</dt><dd>Total editions</dd></div><div><dt>01</dt><dd>Focused collection</dd></div></dl>
         </div>
-        <!-- header -->
+        <a class="hero-art reveal" href="item.html?id=luminous-fold" aria-label="View Luminous Fold by Nia Vale">
+          <img src="assets/images/luminous-fold.webp" alt="Interlocking translucent violet and cyan ribbons floating in darkness" width="1200" height="1200" fetchpriority="high">
+          <span class="art-index">01 / 03</span><span class="art-caption"><strong>Luminous Fold</strong><small>Nia Vale · Spatial study</small></span>
+        </a>
+      </section>
 
-        <!-- intro-page -->
-        <div class="intro">
-            <div class="container">
-                <div class="intro-main">
-                    <div class="intro-left">
-                        <h1>NFT Online Shop</h1>
-                        <img src="./assets/img/bit-shop.png" alt="bit-shop">
-                    </div>
-                    <div class="intro-right">
-                        <img src="./assets/img/shopping.png" alt="shopping">
-                        <div class="right-btns">
-                            <button class="btn-intro-1">SHOPS</button>
-                            <button class="btn-intro-2">Download Apps</button>
-                        </div>
-                    </div>
-                </div>
+      <section class="marquee" aria-label="Mintlane principles"><div><span>Original works</span><i aria-hidden="true"></i><span>Finite editions</span><i aria-hidden="true"></i><span>Artist-led context</span><i aria-hidden="true"></i><span>Browser-native collection</span><i aria-hidden="true"></i></div></section>
 
-            </div>
-        </div>
-        <!-- intro -->
+      <section class="collection section-shell" aria-labelledby="featured-title">
+        <div class="section-heading reveal"><div><p class="eyebrow">The current drop</p><h2 id="featured-title">Edition 01</h2></div><p>Three studies in tension: soft versus structural, luminous versus still.</p></div>
+        <div class="art-grid" data-featured-grid aria-live="polite"></div>
+      </section>
 
+      <section class="curatorial section-shell" id="curatorial-note" aria-labelledby="note-title">
+        <div class="curatorial-number reveal" aria-hidden="true">M/01</div>
+        <div class="curatorial-copy reveal"><p class="eyebrow">Curatorial note</p><h2 id="note-title">Built around the pause before recognition.</h2><p>The first Mintlane edition brings together forms that feel almost familiar—an orbit, a fold, a bloom—then removes their ordinary scale and material. What remains is rhythm, light, and the instinct to look closer.</p><a class="text-link" href="catalog.html">View the complete edition</a></div>
+      </section>
 
-        <!-- posts -->
-        <div class="new-posts">
-            <div class="container">
-                <h2 class="p-15 text-h2">New Products</h2>
-                <div class="posts">
-                    <div class="post-new">
-                        <div class="new-card">
-                            <div class="pro-img">
-                                <img src="./assets/img/bit.png" alt="bit-img">
-                            </div>
+      <section class="newsletter section-shell" aria-labelledby="newsletter-title">
+        <div><p class="eyebrow">Release notes</p><h2 id="newsletter-title">One considered email per edition.</h2></div>
+        <form class="inline-form" data-newsletter-form novalidate><label for="newsletter-email">Email address</label><div><input id="newsletter-email" name="email" type="email" autocomplete="email" placeholder="name@example.com" required><button class="button button-primary" type="submit">Join list</button></div><p class="form-status" data-newsletter-status aria-live="polite"></p></form>
+      </section>
+    </main>
 
-                            <div class="titles">
-                                <p class="name-coin">bit-coin</p>
-                                <p class="price-coin">$26000</p>
-                            </div>
-
-                            <div class="desc">
-                                <p class="desc-coin">Lorem ipsum dolor sit amet.</p>
-                                <p class="new-price">$28000</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="post-new">
-                        <div class="new-card">
-                            <div class="pro-img">
-                                <img src="./assets/img/bit.png" alt="bit-img">
-                            </div>
-
-                            <div class="titles">
-                                <p class="name-coin">bit-coin</p>
-                                <p class="price-coin">$26000</p>
-                            </div>
-
-                            <div class="desc">
-                                <p class="desc-coin">Lorem ipsum dolor sit amet.</p>
-                                <p class="new-price">$28000</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="post-new">
-                        <div class="new-card">
-                            <div class="pro-img">
-                                <img src="./assets/img/bit.png" alt="bit-img">
-                            </div>
-
-                            <div class="titles">
-                                <p class="name-coin">bit-coin</p>
-                                <p class="price-coin">$26000</p>
-                            </div>
-
-                            <div class="desc">
-                                <p class="desc-coin">Lorem ipsum dolor sit amet.</p>
-                                <p class="new-price">$28000</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="post-new">
-                        <div class="new-card">
-                            <div class="pro-img">
-                                <img src="./assets/img/bit.png" alt="bit-img">
-                            </div>
-
-                            <div class="titles">
-                                <p class="name-coin">bit-coin</p>
-                                <p class="price-coin">$26000</p>
-                            </div>
-
-                            <div class="desc">
-                                <p class="desc-coin">Lorem ipsum dolor sit amet.</p>
-                                <p class="new-price">$28000</p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-
-
-
-            </div>
-        </div>
-
-
-        <!-- ads -->
-        <div class="home-ads">
-            <div class="container">
-                <div class="home-ad">
-                    <div class="left-ads">
-                        <img src="./assets/img/08crypto.jpg" alt="ad-1">
-                    </div>
-                    <div class="right-ads">
-                        <img src="./assets/img/ad-1.jpg" alt="ad-2">
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-
-        <!-- top- coin -->
-        <div class="top-coins">
-            <div class="container">
-                <h2>Top Sales Coin :</h2>
-                <div class="top-coins-items">
-                    <div class="top-items">
-                        <div class="new-card">
-                            <div class="pro-img">
-                                <img src="./assets/img/bit.png" alt="bit-img">
-                            </div>
-
-                            <div class="titles">
-                                <p class="name-coin">bit-coin</p>
-                                <p class="price-coin">$26000</p>
-                            </div>
-
-                            <div class="desc">
-                                <p class="desc-coin">Lorem ipsum dolor sit amet.</p>
-                                <p class="new-price">$28000</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="top-items">
-                        <div class="new-card">
-                            <div class="pro-img">
-                                <img src="./assets/img/bit.png" alt="bit-img">
-                            </div>
-
-                            <div class="titles">
-                                <p class="name-coin">bit-coin</p>
-                                <p class="price-coin">$26000</p>
-                            </div>
-
-                            <div class="desc">
-                                <p class="desc-coin">Lorem ipsum dolor sit amet.</p>
-                                <p class="new-price">$28000</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="top-items ">
-                        <div class="new-card">
-                            <div class="pro-img">
-                                <img src="./assets/img/bit.png" alt="bit-img">
-                            </div>
-
-                            <div class="titles">
-                                <p class="name-coin">bit-coin</p>
-                                <p class="price-coin">$26000</p>
-                            </div>
-
-                            <div class="desc">
-                                <p class="desc-coin">Lorem ipsum dolor sit amet.</p>
-                                <p class="new-price">$28000</p>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <div class="top-items ">
-                        <div class="new-card">
-                            <div class="pro-img">
-                                <img src="./assets/img/bit.png" alt="bit-img">
-                            </div>
-
-                            <div class="titles">
-                                <p class="name-coin">bit-coin</p>
-                                <p class="price-coin">$26000</p>
-                            </div>
-
-                            <div class="desc">
-                                <p class="desc-coin">Lorem ipsum dolor sit amet.</p>
-                                <p class="new-price">$28000</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="top-items  ">
-                        <div class="new-card">
-                            <div class="pro-img">
-                                <img src="./assets/img/bit.png" alt="bit-img">
-                            </div>
-
-                            <div class="titles">
-                                <p class="name-coin">bit-coin</p>
-                                <p class="price-coin">$26000</p>
-                            </div>
-
-                            <div class="desc">
-                                <p class="desc-coin">Lorem ipsum dolor sit amet.</p>
-                                <p class="new-price">$28000</p>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="top-items ">
-                        <div class="new-card">
-                            <div class="pro-img">
-                                <img src="./assets/img/bit.png" alt="bit-img">
-                            </div>
-
-                            <div class="titles">
-                                <p class="name-coin">bit-coin</p>
-                                <p class="price-coin">$26000</p>
-                            </div>
-
-                            <div class="desc">
-                                <p class="desc-coin">Lorem ipsum dolor sit amet.</p>
-                                <p class="new-price">$28000</p>
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                </div>
-
-            </div>
-
-        </div>
-
-
-        <!-- why-our-service -->
-        <div class="services">
-            <div class="container">
-                <div class="top-service">
-                    <div class="img-service">
-                        <img src="./assets/img/icons/icons8-service-100.png" alt="service">
-                        <p class="ser-p-1">Lorem, ipsum.</p>
-                        <p class="ser-p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="img-service">
-                        <img src="./assets/img/icons/icons8-service-64.png" alt="service">
-                        <p class="ser-p-1">Lorem, ipsum.</p>
-                        <p class="ser-p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="img-service">
-                        <img src="./assets/img/icons/icons8-service-96.png" alt="service">
-                        <p class="ser-p-1">Lorem, ipsum.</p>
-                        <p class="ser-p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="img-service">
-                        <img src="./assets/img/icons/icons8-service-94.png" alt="service">
-                        <p class="ser-p-1">Lorem, ipsum.</p>
-                        <p class="ser-p-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-        <!-- footer -->
-        <footer>
-            <div class="container">
-                <div class="main-footer">
-                    <div class="first-footer">
-                            <h4>About Us :</h4>
-                            <p>Lorem, ipsum dolor sit amet <br>consectetur adipisicing elit. At, delectus.</p>
-                        </div>
-
-                        <div class="mid-footer">
-                            <h4>Services :</h4>
-                            <ul>
-                                <li><a href="#"></a>Lorem, ipsum.</li>
-                                <li><a href="#"></a>Lorem, ipsum.</li>
-                                <li><a href="#"></a>Lorem, ipsum.</li>
-                                <li><a href="#"></a>Lorem, ipsum.</li>
-                                <li><a href="#"></a>Lorem, ipsum.</li>
-                            </ul>
-                        </div>
-
-                        <div class="mid-footer">
-                            <h4>Contact Us :</h4>
-                            <ul>
-                                <li><span>Email: ww@gmail.com</span></li>
-                                <li><span>Address: Lorem ipsum dolor sit.</span></li>
-                                <li><span>Blog: www.hh.com</span></li>
-
-                            </ul>
-                        </div>
-
-                        <div class="last-footer">
-                            <h4>Pay :</h4>
-                            <img src="./assets/img/icons/icons8-mastercard-64.png" alt="master-card">
-                            <img src="./assets/img/icons/icons8-visa-card-64.png" alt="visa-card">
-                        </div>
-
-
-
-
-                    </div>
-                    <!-- hr -->
-                    <hr>
-                    <div class="under">
-                        <div class="under-footer">
-                            <div class="under-left">
-                                <img src="./assets/img/icons/icons8-telegram-48.png" alt="telegram">
-                                <img src="./assets/img/icons/icons8-instagram-48.png" alt="instagram">
-                            </div>
-
-                            <div class="under-right">
-                                <p>Copy Right 2023</p>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </footer>
-        <!-- footer -->
-    </div>
-
-</body>
-
+    <footer class="site-footer section-shell"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><span></span></span><span>Mintlane</span></a><p>Independent digital editions, presented with context.</p><nav aria-label="Footer"><a href="catalog.html">Discover</a><a href="contact.html">Support</a><a href="account.html">Saved works</a></nav><small>© <span data-year></span> Mintlane. Demonstration marketplace.</small></footer>
+    <div class="toast" role="status" aria-live="polite" aria-atomic="true" data-toast></div>
+  </body>
 </html>
