@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Review your saved and recently viewed Mintlane works.">
+    <meta name="theme-color" content="#0b0911">
+    <title>Your collection — Mintlane</title>
+    <link rel="icon" href="assets/images/mark.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script type="module" src="assets/js/account.js"></script>
+  </head>
+  <body data-page="account">
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header" data-header>
+      <a class="brand" href="index.html" aria-label="Mintlane home"><span class="brand-mark" aria-hidden="true"><span></span></span><span>Mintlane</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle><span class="sr-only">Open navigation</span><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
+      <nav class="site-nav" id="site-nav" aria-label="Primary" data-nav><a href="index.html">Home</a><a href="catalog.html">Discover</a><a href="contact.html">Support</a><a class="saved-link" href="account.html" aria-current="page">Saved <span class="count-badge" data-saved-count>0</span></a></nav>
+    </header>
+
+    <main id="main-content" class="account-page section-shell">
+      <header class="page-intro reveal"><p class="eyebrow">Your collection</p><h1>Keep the works that stay with you.</h1><p>Saved and recently viewed pieces live only in this browser.</p></header>
+      <section class="account-section" aria-labelledby="saved-title"><div class="section-heading"><div><p class="eyebrow">Shortlist</p><h2 id="saved-title">Saved works <span data-account-count>(0)</span></h2></div><button class="clear-button" type="button" data-clear-saved hidden>Clear saved</button></div><div class="art-grid" data-saved-grid></div><div class="empty-panel" data-saved-empty><p>You have not saved a work yet.</p><a class="text-link" href="catalog.html">Explore Edition 01</a></div></section>
+      <section class="account-section" aria-labelledby="recent-title"><div class="section-heading"><div><p class="eyebrow">History</p><h2 id="recent-title">Recently viewed</h2></div><button class="clear-button" type="button" data-clear-recent hidden>Clear history</button></div><div class="art-grid compact-grid" data-recent-grid></div><div class="empty-panel" data-recent-empty><p>Your recently viewed works will appear here.</p></div></section>
+      <aside class="privacy-note"><span aria-hidden="true">◎</span><div><h2>Local by design</h2><p>Mintlane stores saved work IDs and viewing history in your browser only. No account data is transmitted.</p></div></aside>
+    </main>
+
+    <footer class="site-footer section-shell"><a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"><span></span></span><span>Mintlane</span></a><p>Independent digital editions, presented with context.</p><nav aria-label="Footer"><a href="catalog.html">Discover</a><a href="contact.html">Support</a><a href="account.html">Saved works</a></nav><small>© <span data-year></span> Mintlane. Demonstration marketplace.</small></footer>
+    <div class="toast" role="status" aria-live="polite" aria-atomic="true" data-toast></div>
+  </body>
+</html>
